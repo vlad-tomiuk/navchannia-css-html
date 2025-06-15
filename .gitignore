@@ -11,6 +11,11 @@
 # production
 /build
 
+# dist
+dist/win-unpacked
+dist/builder-debug.yml
+dist/builder-effective-config.yaml
+
 # misc
 .DS_Store
 .env.local
