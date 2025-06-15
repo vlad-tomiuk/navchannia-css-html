@@ -1,0 +1,58 @@
+@use "./variables" as *;
+
+* {
+    box-sizing: border-box !important;
+}
+.hide{
+    opacity: 0;
+}
+.hidden{
+	display: none;
+}
+.hide{
+    opacity: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+html,
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+	overscroll-behavior: none;
+}
+body{
+    background-color: $color-text-default;
+    font-family: 'NAMU', sans-serif;
+	font-weight: 700;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+	position: relative;
+
+	&::-webkit-scrollbar-track{
+		-webkit-box-shadow: inset 0 0 10px rgba($color-border-default, 0.3);
+		background-color: $color-text-default;
+	}
+	&::-webkit-scrollbar{
+		width: 10px;
+		background-color: $color-text-hover;
+	}
+	&::-webkit-scrollbar-thumb{
+		background-color: $color-border-active;
+	}
+}
+.svg-wrap{
+	width: 0;
+	height: 0;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: -9999px;
+	bottom: 0;
+	z-index: -9999;
+	overflow: hidden;
+	pointer-events: none;
+}
